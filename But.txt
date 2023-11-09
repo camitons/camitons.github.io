@@ -1,0 +1,8 @@
+Web app permettant de dessiner
+
+seront proposés :
+des formes géométriques, un stylet, une retouche par IA à la fin du dessin (controleur), des imports d'image pour le background...
+
+implémentations :
+BDD permettant de récupérer les anciens dessins lors de la connexion (MVC)
+CANVA pour le dessin (dans la vue surement)
