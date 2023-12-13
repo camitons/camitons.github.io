@@ -6,3 +6,5 @@ des formes géométriques, un stylet, une retouche par IA à la fin du dessin (c
 implémentations :
 BDD permettant de récupérer les anciens dessins lors de la connexion (MVC)
 CANVA pour le dessin (dans la vue surement)
+
+
