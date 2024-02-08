@@ -8,3 +8,21 @@ BDD permettant de récupérer les anciens dessins lors de la connexion (MVC)
 CANVA pour le dessin (dans la vue surement)
 
 
+
+
+
+Faire une petite liste des SAE/projets au fil du temps avec des infos légères pour chacune et un lien qui redirige vers les compétences du BUT 
+
+Les compétences du BUT seront organisé en arbre ? avec une page par compétence et les différents projets qui leurs correspondent à chacun
+
+
+Compétence 2 : 
+TD de dev efficace : diviser pour mieux régner : complexité O log(n)
+
+
+Compétence 4 : 
+SAE BD : mettre en place une base de donnée à partir d'un cahier des charge 
+
+
+Compétence 5 : 
+SAE Enchère : Scrum master 

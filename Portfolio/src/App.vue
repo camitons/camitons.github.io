@@ -1,6 +1,6 @@
 <script>
 import Header from './composants/Header.vue'
-import BodyHome from "./composants/BodyHome.vue";
+import BodyHome from "./composants/Bodys/BodyHome.vue";
 import Footer from "./composants/Footer.vue";
 
 export default {
@@ -49,12 +49,4 @@ all {
   flex-direction: column;
   align-items: center;
 }
-
-.container{
-  background-image: repeating-radial-gradient(  #0c0a0a 80%,#2f312f 90%,#3f4549 90%);
-  background-size: 65px 65px;
-  background-repeat: repeat-x;
-  overflow: visible;
-}
-
 </style>

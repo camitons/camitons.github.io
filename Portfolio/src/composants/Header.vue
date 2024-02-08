@@ -41,10 +41,10 @@ nav {
 }
 
 .container {
-  /* Add your background pattern here */
   background-image: repeating-radial-gradient(  #0c0a0a 80%,#2f312f 90%,#3f4549 90%);
-  background-size: 65px 65px;
+  background-size: 50px 50px;
   overflow: hidden;
+  background-repeat: repeat;
 }
 
 a {
