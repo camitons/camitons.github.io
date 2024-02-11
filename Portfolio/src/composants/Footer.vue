@@ -3,9 +3,14 @@
 </script>
 
 <template>
-<p> le footer </p>
+  <div >
+    <p> DLFKJSDLKJFDSLKJFSDLKJFSDLKFJMLFKJSMLDKJFMLKSDJFMLKJ</p>
+  </div>
+
+
 </template>
 
 <style scoped>
+
 
 </style>
