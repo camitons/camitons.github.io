@@ -54,11 +54,14 @@ export default {
   <div id="app" class="container">
     <Header @changer-vue-body="gererChangementBody" />
     <div id="body">
-    <component :is="currentView"> </component>
+      <component :is="currentView"> </component>
     </div>
-    <div class="footer">
-    <Footer />
+    <div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
+
   </div>
 
 </template>
@@ -67,14 +70,7 @@ export default {
 
 
 
-#body {
-  top : 5%;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  overflow: auto;
-}
+
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -83,22 +79,30 @@ export default {
   text-align: center;
   /* Supprimez ou modifiez la propriété overflow */
   /* overflow: hidden; */
-  overflow-y: scroll; /* Ajoutez si nécessaire pour permettre le défilement vertical */
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-items: center;
-
-}
-
-.footer {
   width: 100%;
-  background-color: #f8f9fa; /* Couleur de fond de votre choix */
-  padding: 20px; /* Ajustez selon vos besoins */
-  margin-top: auto;
+
 }
-.footer,
-.footer * {
-  box-sizing: border-box;
+
+footer{
+  bottom: 0;
+}
+* {
+  margin: 0;
+}
+
+#body {
+  min-height: 100%;
+  margin-bottom: -142px;
+  margin-top: 100px;
+}
+#body:after {
+  content: "";
+  display: block;
+}
+footer, #body:after {
+  height: 142px;
 }
 
 
