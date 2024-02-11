@@ -1,23 +1,58 @@
 <script>
 import Header from './composants/Header.vue'
 import BodyHome from "./composants/Bodys/BodyHome.vue";
+import BodyDessin from "./composants/Bodys/BodyDessin.vue";
+import BodyQuiJeSuis from "./composants/Bodys/BodyQuiJeSuis.vue";
+import BodyOueskonVa from "./composants/Bodys/BodyOueskonVa.vue";
+import BodyBonCHance from "./composants/Bodys/BodyBonChance.vue";
+import BodyCompetences from "./composants/Bodys/BodyCompetences.vue";
+
 import Footer from "./composants/Footer.vue";
 
 export default {
   components: {
-    Footer,
-    BodyHome,
     Header
-  }
+  },
+  data() {
+    return {
+      currentView: BodyHome
+    };
+  },
+  methods: {
+    gererChangementBody(viewName) {
+      switch (viewName) {
+        case 'BodyHome':
+          this.currentView = BodyHome;
+          break;
+        case 'BodyDessin':
+          this.currentView = BodyDessin;
+          break;
+        case 'BodyQuiJeSuis':
+          this.currentView = BodyQuiJeSuis;
+          break;
+        case 'BodyOueskonVa':
+          this.currentView = BodyOueskonVa;
+          break;
+        case 'BodyBonCHance':
+          this.currentView = BodyBonCHance;
+          break;
+        case 'BodyCompetences':
+          this.currentView = BodyCompetences;
+          break;
+        default:
+          this.currentView = BodyHome;
+      }
+    }
+  },
 };
 
 </script>
 
 <template>
   <div id="app" class="container">
-    <Header/>
+    <Header @changer-vue-body="gererChangementBody" />
     <div>
-    <BodyHome/>
+    <component :is="currentView"> </component>
     </div>
     <footer>
       <Footer/>

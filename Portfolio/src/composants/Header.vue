@@ -1,24 +1,30 @@
 <script>
-
+export default {
+  methods: {
+    changerVue(viewName) {
+      this.$emit('changer-vue-body', viewName); // Émet un événement personnalisé avec le nom de la vue
+    }
+  }
+}
 
 </script>
 <template>
   <!-- html -->
   <nav class="container">
     <button>
-      <a href="#"><span>Home</span></a>
+      <a @click="changerVue('BodyHome')"><span>Home</span></a>
     </button>
     <button>
-      <a href="#"><span>Dessin</span></a>
+      <a @click="changerVue('BodyDessin')"><span>Dessin</span></a>
     </button>
     <button>
-      <a href="#"><span>Qui je suis</span></a>
+      <a @click="changerVue('BodyQuiJeSuis')"><span>Qui je suis</span></a>
     </button>
     <button>
-      <a href="#"><span>Oueskon va</span></a>
+      <a @click="changerVue('BodyOueskonVa')"><span>Oueskon va</span></a>
     </button>
     <button>
-      <a href="#"><span>Keskon fait</span></a>
+      <a @click="changerVue('BodyBonCHance')"><span>BonChance</span></a>
     </button>
   </nav>
 
