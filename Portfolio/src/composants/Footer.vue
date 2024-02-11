@@ -3,14 +3,12 @@
 </script>
 
 <template>
-  <div >
-    <p> DLFKJSDLKJFDSLKJFSDLKJFSDLKFJMLFKJSMLDKJFMLKSDJFMLKJ</p>
-  </div>
-
+<div>
+  <p>footer</p>
+</div>
 
 </template>
 
 <style scoped>
-
 
 </style>
