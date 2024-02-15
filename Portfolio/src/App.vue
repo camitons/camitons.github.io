@@ -5,15 +5,19 @@ import BodyHome from "./composants/Bodys/BodyHome.vue";
 import BodyDessin from "./composants/Bodys/BodyCompetences.vue";
 import BodyQuiJeSuis from "./composants/Bodys/BodyQuiJeSuis.vue";
 import BodyOueskonVa from "./composants/Bodys/BodyOueskonVa.vue";
-import BodyBonCHance from "./composants/Bodys/Contactez moi.vue";
+import BodyContactezMoi from "./composants/Bodys/BodyContactezMoi.vue";
 import BodyCompetences from "./composants/Bodys/BodyCompetences.vue";
 import Footer from "@/composants/Footer.vue";
 
 
 export default {
+
   components: {
     Footer,
     Header
+  },
+  mounted() {
+    document.title = "Portfolio Albin Caminade";
   },
   data() {
     return {
@@ -35,8 +39,8 @@ export default {
         case 'BodyOueskonVa':
           this.currentView = BodyOueskonVa;
           break;
-        case 'BodyBonCHance':
-          this.currentView = BodyBonCHance;
+        case 'BodyContactezMoi':
+          this.currentView = BodyContactezMoi;
           break;
         case 'BodyCompetences':
           this.currentView = BodyCompetences;
