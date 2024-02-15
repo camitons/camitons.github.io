@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import BodyHome from '../composants/Bodys/BodyHome.vue';
-import BodyBonChance from '../composants/Bodys/BodyBonChance.vue';
+import BodyBonChance from '../composants/Bodys/Contactez moi.vue';
 import BodyCompetence from '../composants/Bodys/BodyCompetences.vue';
-import BodyDessin from '../composants/Bodys/BodyDessin.vue';
+import BodyDessin from '../composants/Bodys/BodyCompetences.vue';
 import BodyQuiJeSuis from '../composants/Bodys/BodyQuiJeSuis.vue';
 
 Vue.use(VueRouter);

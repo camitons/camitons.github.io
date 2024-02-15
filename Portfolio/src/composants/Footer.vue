@@ -6,7 +6,7 @@
   <div>
     <p>
       <br>
-      Contactez moi juste ici !
+      Mes réseaux sociaux !
 
     </p>
     <a href="https://www.linkedin.com/in/albin-caminade-069526197/">

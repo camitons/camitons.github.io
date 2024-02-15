@@ -2,10 +2,10 @@
 import Header from './composants/Header.vue';
 import FooterInitial from "./composants/Footer.vue";
 import BodyHome from "./composants/Bodys/BodyHome.vue";
-import BodyDessin from "./composants/Bodys/BodyDessin.vue";
+import BodyDessin from "./composants/Bodys/BodyCompetences.vue";
 import BodyQuiJeSuis from "./composants/Bodys/BodyQuiJeSuis.vue";
 import BodyOueskonVa from "./composants/Bodys/BodyOueskonVa.vue";
-import BodyBonCHance from "./composants/Bodys/BodyBonChance.vue";
+import BodyBonCHance from "./composants/Bodys/Contactez moi.vue";
 import BodyCompetences from "./composants/Bodys/BodyCompetences.vue";
 import Footer from "@/composants/Footer.vue";
 
