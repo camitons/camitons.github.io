@@ -5,98 +5,99 @@
         <div class="main-timeline">
           <div class="timeline">
             <a href="#" class="timeline-content">
-              <span class="timeline-year">2018</span>
+              <span class="timeline-year">2020</span>
               <div class="timeline-icon">
                 <i class="fa fa-rocket" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">Web Development</h3>
+                <h3 class="title">Création d'un bot python</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Création d'un bot dans le langage python pour automatiser des tâches sur un jeu vidéo (dofus). Je me suis inspiré de la librairie pyautogui pour réaliser ce projet.
+                  Sans aucune base en programmation, j'ai appris en autoditacte à utiliser le langage python.
                 </p>
               </div>
             </a>
           </div>
           <div class="timeline">
             <a href="#" class="timeline-content">
-              <span class="timeline-year">2017</span>
+              <span class="timeline-year">2021</span>
               <div class="timeline-icon">
                 <i class="fa fa-users" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">JavaScript</h3>
+                <h3 class="title">Développement d'un programme d'obfuscation de code</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Après m'être intéressé à la sécurité informatique, j'ai décidé de développer un outil d'obfuscation de code en python. Cet outil étant sensé rendre du code C illisible. (programme non fonctionnel mais très instructif)
                 </p>
               </div>
             </a>
           </div>
           <div class="timeline">
-            <a href="#" class="timeline-content">
-              <span class="timeline-year">2017</span>
+            <a href="#" class="timeline-content" id="information-non-clickable">
+              <span class="timeline-year">2022</span>
               <div class="timeline-icon">
                 <i class="fa fa-cog" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">Mongo DB</h3>
+                <h3 class="title">IUT d'informatique de Montpellier</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Un besoin de cadre et de formation plus strict m'a poussé à m'inscrire à l'IUT d'informatique de Montpellier. Mes projets suivants ont été réalisés dans le cadre de cette formation.
                 </p>
               </div>
             </a>
           </div>
           <div class="timeline">
             <a href="#" class="timeline-content">
-              <span class="timeline-year">2017</span>
+              <span class="timeline-year">2022</span>
               <div class="timeline-icon">
                 <i class="fa fa-heart" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">BlackPearl</h3>
+                <h3 class="title">Développement d'un jeu de mastermind</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Le premier projet de groupe que j'ai réalisé, un jeu de mastermind en java. Les règles du jeu sont respectées et le jeu est jouable en console. Initiation à GIT, l'algorithmique, et à la programmation orientée objet.
                 </p>
               </div>
             </a>
           </div>
           <div class="timeline">
             <a href="#" class="timeline-content">
-              <span class="timeline-year">2017</span>
+              <span class="timeline-year">2023</span>
               <div class="timeline-icon">
                 <i class="fa fa-globe" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">Angular</h3>
+                <h3 class="title">Conception du jeu Les Aventuriers du Rail</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Projet de groupe réalisé en java, 3 grandes parties : la mécanique de jeu, la mise en oeuvre d'algorithmes de graphes et de recherche de chemin, puis la création d'une interface graphique.
                 </p>
               </div>
             </a>
           </div>
           <div class="timeline">
             <a href="#" class="timeline-content">
-              <span class="timeline-year">2017</span>
+              <span class="timeline-year">2023</span>
               <div class="timeline-icon">
                 <i class="fa fa-apple" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">Laravel</h3>
+                <h3 class="title">Création d'une base de donnée en SQL+</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Projet de groupe réalisé en SQL+, création d'une base de donnée pour un site de vente de produits. Mise en place de procédures stockées, de triggers, de vues, et de fonctions.
                 </p>
               </div>
             </a>
           </div>
           <div class="timeline">
             <a href="#" class="timeline-content">
-              <span class="timeline-year">2017</span>
+              <span class="timeline-year">2023-2024</span>
               <div class="timeline-icon">
                 <i class="fa fa-edit" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">Creapure</h3>
+                <h3 class="title">Elaboration d'une application sécurisée d'enchère</h3>
                 <p class="description">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  Projet de groupe réalisé en java, création d'une application sécurisée d'enchère. Initiation aux méthodes agiles (SCRUM), à la cryptographie ainsi qu'aux Sockets (SSL, communication en ligne).
                 </p>
               </div>
             </a>
@@ -108,12 +109,23 @@
 </template>
 <style>
 body {
-  font-family: tahoma;
   padding: 40px 0;
 }
 
+.description {
+  color: #ffffff; /* Couleur du texte */
+  font-family: Arial, sans-serif; /* Police de caractères */
+  font-size: 18px; /* Taille de police */
+  border: 2px solid #000000; /* Bordure de 2px solide en noir */
+  padding: 10px; /* Espace intérieur de la bordure */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+}
+
+.
+
 .main-timeline {
-  font-family: tahoma;
+  font-family: tahoma,serif;
   padding: 20px 0;
   position: relative;
 }
@@ -412,6 +424,10 @@ body {
   animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+#information-non-clickable {
+  pointer-events: none;
+}
+
 /* ----------------------------------------------
  * Generated by Animista on 2024-2-14 19:8:1
  * Licensed under FreeBSD License.
@@ -454,4 +470,5 @@ body {
 }
 
 </style>
-<script></script>
+<script>
+</script>

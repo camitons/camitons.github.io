@@ -44,8 +44,10 @@ export default {
   <br><br><br><br><br><br><br><br>
 
   <div>
-  <h2 id='texteAfficherTimeline' @click="afficherTimeline()"> Une petite histoire vous ferait envie ? </h2>
+  <h2 id='texteAfficherTimeline' @click="afficherTimeline()"> Une petite histoire vous ferait envie ? <br> Découvrez mes avancées et découvertes de l'informatique</h2>
+    <br><br>
     <VueTimeline v-if="afficherVueTimeline" />
+    <br>
     <p @click="afficherTimeline()" v-if="afficherVueTimeline" id="refermerTimeline"> Refermer la timeline </p>
   </div>
     <br>
