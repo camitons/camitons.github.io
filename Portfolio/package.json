@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
+    "nodemailer": "^6.9.9",
     "vue": "^3.3.10",
-    "vue3-m-circle-progress-bar": "^0.6.1"
+    "vue-impress": "^0.0.7",
+    "vue3-m-circle-progress-bar": "^0.6.1",
+    "vuewordcloud": "^19.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.1",

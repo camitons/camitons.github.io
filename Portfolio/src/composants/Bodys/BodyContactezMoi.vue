@@ -162,5 +162,36 @@ fieldset {
     </div>
   </div>
 </template>
+
+
 <script>
+
+
+//import nodemailer from "nodemailer";
+//
+//async function sendEmail({ to, subject, text, html }) {
+//  // Créer un transporter
+//  let transporter = nodemailer.createTransport({
+//    host: "votre.smtp.host",
+//    port: 587, // Le plus souvent 587 pour TLS
+//    secure: false, // true pour le port 465, false pour d'autres ports
+//    auth: {
+//      user: "votre@adresse.email", // votre adresse email
+//      pass: "votreMotDePasse", // votre mot de passe
+//    },
+//  });
+//
+//  // Envoyer l'email
+//  let info = await transporter.sendMail({
+//    from: '"Nom Expéditeur" <votre@adresse.email>', // adresse de l'expéditeur
+//    to: to, // liste des destinataires
+//    subject: subject, // Ligne de sujet
+//    text: text, // corps du texte
+//    html: html, // corps du html
+//  });
+//
+//  console.log("Message envoyé: %s", info.messageId);
+//}
+//
+//module.exports = { sendEmail };
 </script>

@@ -122,7 +122,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
 }
 
-.
 
 .main-timeline {
   font-family: tahoma,serif;
