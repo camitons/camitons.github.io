@@ -44,11 +44,11 @@ export default {
   <br><br><br><br><br><br><br><br>
 
   <div>
-  <h2 id='texteAfficherTimeline' @click="afficherTimeline()"> Une petite histoire vous ferait envie ? <br> Découvrez mes avancées et découvertes de l'informatique</h2>
+  <h2 id='texteAfficherTimeline' class="CTA" @click="afficherTimeline()"> Une petite histoire vous ferait envie ? <br> Découvrez mes avancées et découvertes de l'informatique</h2>
     <br><br>
     <VueTimeline v-if="afficherVueTimeline" />
     <br>
-    <p @click="afficherTimeline()" v-if="afficherVueTimeline" id="refermerTimeline"> Refermer la timeline </p>
+    <p @click="afficherTimeline()" v-if="afficherVueTimeline" id="refermerTimeline" class="CTA"> Refermer la timeline </p>
   </div>
     <br>
 
@@ -168,6 +168,16 @@ h1 {
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/*
+Animation du background et texte qui change au survol
+ */
+.CTA:hover{
+  color: #ffa260;
+  transition: 0.25s;
+  cursor: pointer;
+  user-select: none;
 }
 
 

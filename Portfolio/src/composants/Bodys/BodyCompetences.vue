@@ -1,38 +1,79 @@
 <template>
   <div id="BodyPrincipaleCompétences">
     <div class="left">
-        <button class="boutonCompétences" @click="afficherArbre(2)">HTML</button>
-        <button class="boutonCompétences" @click="afficherArbre(1)">CSS</button>
-        <button class="boutonCompétences" @click="afficherArbre(4)">JAVA</button>
-        <button class="boutonCompétences" @click="afficherArbre(1)">JAVASCRIPT</button>
-        <button class="boutonCompétences" @click="afficherArbre(2)">VUEJS</button>
-        <button class="boutonCompétences" @click="afficherArbre(2)">SQL+</button>
-        <button class="boutonCompétences" @click="afficherArbre(2)">PHP</button>
-        <button class="boutonCompétences" @click="afficherArbre(2)">PYTHON</button>
-        <button class="boutonCompétences" @click="afficherArbre(1)">C</button>
-        <button class="boutonCompétences" @click="afficherArbre(2)">SCRUM</button>
+      <button class="boutonCompétences" v-for="(langue, index) in langues" :key="index" @click="afficherCompetence(langue)">
+        {{ langue.nom }}
+      </button>
     </div>
     <div class="right">
       <img src="" alt="arbres dofus" id="arbre">
       <div id="projets">
-        <h2>Projets réalisées</h2>
-      <li>
-        <a href="">Projet 1</a>
-        <a href="">Projet 2</a>
-        <a href="">Projet 3</a>
-      </li>
+        <h2 id="titreprojet">Projets réalisés</h2>
+        <ul>
+          <li v-for="(projet, index) in projets" :key="index" @click="afficherProjet(projet)">
+            <a href="#">{{ projet }}</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
+  <div id="Projetaffiché">
+    <component :is="vueProjet" v-if="vueProjet" id="vueProjet"></component>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      langues: [
+        { nom: 'HTML', projets: ['1', '2', "3"] },
+        { nom: 'CSS', projets: ["1", "2"] },
+        { nom: 'JAVA', projets: ['Aventurier du Rail', 'Mastermind', "1","2","3"] },
+        { nom: 'JAVASCRIPT', projets: ["1"] },
+        { nom: 'VUEJS', projets: ["Portfolio"] },
+        { nom: 'SQL+', projets: ["1","2","3"] },
+        { nom: 'PHP', projets: ["1","2","3"] },
+        { nom: 'PYTHON', projets: ["1","2"] },
+        { nom: 'C', projets: ["1","2"] },
+        { nom: 'SCRUM', projets: ["1"] }
+      ],
+      projets:[],
+      vueProjet: null
+    };
+  },
   methods: {
-    afficherArbre(i) {
+    afficherCompetence(langue) {
       const arbre = document.getElementById('arbre');
-      arbre.src = `/img/arbres/arbre${i}dofus.png`;
+      this.projets=langue.projets;
+      if (langue.nom!=='SCRUM') {
+        document.getElementById('titreprojet').innerText = `Projets réalisés en ${langue.nom}`;
+      }
+      else {
+        document.getElementById('titreprojet').innerText = `Projets réalisés en utilisant la méthode ${langue.nom}`;
+      }
+      if (langue.projets.length>3){
+        arbre.src='/img/arbres/arbre4dofus.png';
+      }
+      else {
+        arbre.src = `/img/arbres/arbre${langue.projets.length}dofus.png`;
+      }
+      this.vueProjet = null;
       arbre.style.display = 'block';
+    },
+
+
+    afficherProjet(nomProjet) {
+      // Générer le nom de la vue en fonction du nom du projet
+      const nomVue = 'Projet' + nomProjet.toLowerCase().split(" ").join(""); // Enlève les espaces du nom du projet
+
+      // Dynamiquement importer la vue du projet
+      import(`../Projets/${nomVue}.vue`).then(module => {
+        // Assigner la vue du projet au composant dynamique
+        this.vueProjet = module.default;
+      }).catch(error => {
+        console.error('Erreur lors du chargement de la vue du projet :', error);
+      });
     }
   }
 }
