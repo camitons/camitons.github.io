@@ -31,7 +31,7 @@ export default {
   methods: {
     afficherArbre(i) {
       const arbre = document.getElementById('arbre');
-      arbre.src = `../../../public/img/arbres/arbre${i}dofus.png`;
+      arbre.src = `/img/arbres/arbre${i}dofus.png`;
       arbre.style.display = 'block';
     }
   }
