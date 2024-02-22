@@ -15,7 +15,7 @@ export default {
       <a @click="changerVue('BodyHome')"><span>Home</span></a>
     </button>
     <button>
-      <a @click="changerVue('BodyDessin')"><span>Projets/Compétences</span></a>
+      <a @click="changerVue('BodyCompetences')"><span>Projets/Compétences</span></a>
     </button>
     <button>
       <a @click="changerVue('BodyQuiJeSuis')"><span>Qui je suis</span></a>

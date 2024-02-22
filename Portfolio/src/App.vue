@@ -1,12 +1,11 @@
 <script>
 import Header from './composants/Header.vue';
-import FooterInitial from "./composants/Footer.vue";
 import BodyHome from "./composants/Bodys/BodyHome.vue";
 import BodyDessin from "./composants/Bodys/BodyCompetences.vue";
+import BodyCompetences from "./composants/Bodys/BodyCompetences.vue";
 import BodyQuiJeSuis from "./composants/Bodys/BodyQuiJeSuis.vue";
 import BodyOueskonVa from "./composants/Bodys/BodyOueskonVa.vue";
 import BodyContactezMoi from "./composants/Bodys/BodyContactezMoi.vue";
-import BodyCompetences from "./composants/Bodys/BodyCompetences.vue";
 import Footer from "@/composants/Footer.vue";
 
 
@@ -21,7 +20,7 @@ export default {
   },
   data() {
     return {
-      currentView: BodyHome
+      currentView: BodyHome,
     };
   },
   methods: {
@@ -29,9 +28,6 @@ export default {
       switch (viewName) {
         case 'BodyHome':
           this.currentView = BodyHome;
-          break;
-        case 'BodyDessin':
-          this.currentView = BodyDessin;
           break;
         case 'BodyQuiJeSuis':
           this.currentView = BodyQuiJeSuis;
@@ -50,6 +46,19 @@ export default {
       }
     }
   },
+  directives: {
+    'scroll-show': {
+      bind(el, binding) {
+        window.addEventListener('scroll', () => {
+          const scrollPosition = window.scrollY;
+          const triggerPosition = binding.value;
+          if (scrollPosition >= triggerPosition) {
+            binding.expression = true;
+          }
+        });
+      }
+    }
+  }
 };
 
 </script>
@@ -60,6 +69,7 @@ export default {
     <div id="body">
       <component :is="currentView"> </component>
     </div>
+<!--    <img v-scroll-show="500" src="/img/flechebas.png" alt="fleche permettant de remonter la page" id="fleche_remonter">-->
     <div>
       <footer>
         <Footer />
@@ -109,5 +119,21 @@ footer, #body:after {
   height: 142px;
 }
 
+
+#fleche_remonter {
+  background-color: #00bd7e;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  animation: 2s infinite alternate;
+  animation-name: move;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+}
 
 </style>

@@ -6,10 +6,14 @@
       </button>
     </div>
     <div class="right">
-      <img src="" alt="arbres dofus" id="arbre">
+      <div class="conteneurimg">
+        <img src="" alt="arbres dofus" id="arbre">
+      </div>
       <div id="projets">
+        <div class="conteneurtxt">
         <h2 id="titreprojet">Projets réalisés</h2>
-        <ul>
+        </div>
+          <ul>
           <li v-for="(projet, index) in projets" :key="index" @click="afficherProjet(projet)">
             <a href="#">{{ projet }}</a>
           </li>
@@ -117,14 +121,14 @@ export default {
   line-height: 1;
   margin: 0.5em;
   padding: 1em 2em;
-  color: #ffa260;
+  color: #00bd7e;
   cursor: pointer;
   transition: 0.25s;
 }
 .boutonCompétences:hover {
-  background: #ffa260;
+  background: #00bd7e;
   color: #fff;
-  border-color: #ffa260;
+  border-color: #05855a;
   transition: 0.25s;
 }
 
@@ -135,4 +139,15 @@ export default {
   align-items: center;
   margin-top: 20px;
 }
+
+.conteneurimgtxt{
+  width: 150px;
+  height: 200px;
+}
+.conteneurtxt{
+  width: 200px;
+  height: 150px;
+  align-items: start;
+}
+
 </style>

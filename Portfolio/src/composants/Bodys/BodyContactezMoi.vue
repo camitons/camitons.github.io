@@ -136,6 +136,16 @@ fieldset {
 }
 </style>
 <template>
+  <!-- idées pour le backend -->
+
+<!--  Service de stockage en ligne : Vous pouvez utiliser des services de stockage en ligne comme Firebase Realtime Database ou Firestore. Ces services vous permettent de stocker des données sous forme de JSON et fournissent une API simple pour lire et écrire des données. Avec Firebase, par exemple, vous pouvez utiliser Firestore pour stocker les données et Firebase SDK pour JavaScript pour les récupérer côté frontend.-->
+
+<!--  Utilisation de services de formulaires en ligne : Des services comme Google Forms vous permettent de créer rapidement des formulaires et de récupérer les réponses via une interface Web ou en exportant les données. Vous pouvez intégrer un formulaire Google directement dans votre application Vue.js.-->
+
+<!--  Stockage local dans le navigateur : Si les données ne nécessitent pas de persistance entre les sessions, vous pouvez simplement stocker les données dans le navigateur du client à l'aide du stockage local (localStorage ou sessionStorage). Cela évite complètement l'utilisation d'un backend.-->
+
+<!--  Utilisation de services de microservices sans serveur (serverless) : Des services comme AWS Lambda ou Google Cloud Functions vous permettent d'exécuter du code sans avoir à gérer des serveurs. Vous pouvez créer une fonction simple pour gérer la récupération des données du formulaire.-->
+
   <div class="background">
     <div class="container">
       <form id="contact" action="" method="post">
