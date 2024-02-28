@@ -5,6 +5,8 @@
 <template>
   <div>
     <h1>Qui je suis</h1>
+    <h2> Pur produit de son environnement </h2>
+
     <p>
       Livres
     </p>

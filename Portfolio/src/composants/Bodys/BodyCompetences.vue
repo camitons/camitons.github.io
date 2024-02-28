@@ -24,10 +24,12 @@
   <div id="Projetaffiché">
     <component :is="vueProjet" v-if="vueProjet" id="vueProjet"></component>
   </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </template>
 
 <script>
 export default {
+  isActive: false,
   data() {
     return {
       langues: [
@@ -64,6 +66,13 @@ export default {
       }
       this.vueProjet = null;
       arbre.style.display = 'block';
+      for (let i = 0; i < this.langues.length; i++) {
+        if (this.langues[i].nom === langue.nom) {
+          document.querySelectorAll('.boutonCompétences')[i].classList.add('active');
+        } else {
+          document.querySelectorAll('.boutonCompétences')[i].classList.remove('active');
+        }
+      }
     },
 
 
@@ -139,15 +148,17 @@ export default {
   align-items: center;
   margin-top: 20px;
 }
-
-.conteneurimgtxt{
-  width: 150px;
-  height: 200px;
-}
 .conteneurtxt{
   width: 200px;
   height: 150px;
   align-items: start;
 }
+
+.boutonCompétences.active {
+  background: #00bd7e;
+  color: #fff;
+  border-color: #05855a;
+}
+
 
 </style>
