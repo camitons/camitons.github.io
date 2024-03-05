@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -29,6 +28,8 @@
       Maximum Joy
 
     </p>
+
+
   </div>
 </template>
 
