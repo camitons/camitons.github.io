@@ -12,7 +12,7 @@ export default {
   <!-- html -->
   <nav class="container">
     <button>
-      <a @click="changerVue('BodyHome')"><span>Home</span></a>
+      <a @click="changerVue('BodyHome')"><span>Accueil</span></a>
     </button>
     <button>
       <a @click="changerVue('BodyCompetences')"><span>Projets/Compétences</span></a>

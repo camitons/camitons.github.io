@@ -27,7 +27,7 @@
         loop
     >
     </audio>
-    <img :src="musiqueActive ? '/img/sonActif.jpg' : '/img/sonCoupe.jpg'" alt="Musique" id="LogoMusique">
+    <img :src="musiqueActive ? '/img/sonActif.png' : '/img/sonCoupe.png'" alt="Musique" id="LogoMusique">
   </div>
 </template>
 
