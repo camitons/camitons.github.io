@@ -36,7 +36,7 @@ export default {
     return {
       langues: [
         { nom: 'HTML', projets: ['à venir', 'à venir', "à venir"] },
-        { nom: 'CSS', projets: ["1", "2"] },
+        { nom: 'CSS', projets: ["à venir", "à venir"] },
         { nom: 'JAVA', projets: ['Aventurier du Rail', 'Mastermind', "à venir","à venir","à venir"] },
         { nom: 'JAVASCRIPT', projets: ["à venir"] },
         { nom: 'VUEJS', projets: ["Portfolio"] },
