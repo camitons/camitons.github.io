@@ -28,21 +28,23 @@
 </template>
 
 <script>
+import Construction from "@/composants/Sous-vues/Construction.vue";
+
 export default {
   isActive: false,
   data() {
     return {
       langues: [
-        { nom: 'HTML', projets: ['1', '2', "3"] },
+        { nom: 'HTML', projets: ['à venir', 'à venir', "à venir"] },
         { nom: 'CSS', projets: ["1", "2"] },
-        { nom: 'JAVA', projets: ['Aventurier du Rail', 'Mastermind', "1","2","3"] },
-        { nom: 'JAVASCRIPT', projets: ["1"] },
+        { nom: 'JAVA', projets: ['Aventurier du Rail', 'Mastermind', "à venir","à venir","à venir"] },
+        { nom: 'JAVASCRIPT', projets: ["à venir"] },
         { nom: 'VUEJS', projets: ["Portfolio"] },
-        { nom: 'SQL+', projets: ["1","2","3"] },
-        { nom: 'PHP', projets: ["1","2","3"] },
-        { nom: 'PYTHON', projets: ["1","2"] },
-        { nom: 'C', projets: ["1","2"] },
-        { nom: 'SCRUM', projets: ["1"] }
+        { nom: 'SQL+', projets: ["à venir","à venir","à venir"] },
+        { nom: 'PHP', projets: ["à venir","à venir","à venir"] },
+        { nom: 'PYTHON', projets: ["à venir","à venir"] },
+        { nom: 'C', projets: ["à venir","à venir"] },
+        { nom: 'SCRUM', projets: ["à venir"] }
       ],
       projets:[],
       vueProjet: null
@@ -78,15 +80,20 @@ export default {
 
     afficherProjet(nomProjet) {
       // Générer le nom de la vue en fonction du nom du projet
-      const nomVue = 'Projet' + nomProjet.toLowerCase().split(" ").join(""); // Enlève les espaces du nom du projet
+      if (nomProjet === "à venir") {
+        this.vueProjet= Construction;
+      }
+      else {
+        const nomVue = 'Projet' + nomProjet.toLowerCase().split(" ").join(""); // Enlève les espaces du nom du projet
 
-      // Dynamiquement importer la vue du projet
-      import(`../Projets/${nomVue}.vue`).then(module => {
-        // Assigner la vue du projet au composant dynamique
-        this.vueProjet = module.default;
-      }).catch(error => {
-        console.error('Erreur lors du chargement de la vue du projet :', error);
-      });
+        // Dynamiquement importer la vue du projet
+        import(`../Projets/${nomVue}.vue`).then(module => {
+          // Assigner la vue du projet au composant dynamique
+          this.vueProjet = module.default;
+        }).catch(error => {
+          console.error('Erreur lors du chargement de la vue du projet :', error);
+        });
+      }
     }
   }
 }

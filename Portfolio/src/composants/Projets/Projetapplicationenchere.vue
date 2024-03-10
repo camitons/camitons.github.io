@@ -1,10 +1,11 @@
 <script setup>
 
+import Construction from "@/composants/Sous-vues/Construction.vue";
 </script>
 
 <template>
 <h1> Projet application Enchere</h1>
-
+  <Construction/>
 
 </template>
 

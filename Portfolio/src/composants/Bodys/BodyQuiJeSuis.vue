@@ -1,11 +1,12 @@
 <script setup>
+import Construction from "@/composants/Sous-vues/Construction.vue";
 </script>
 
 <template>
   <div>
 
-    <h1> En construction...</h1>
-    <img src="/img/gifs/gifConstruction.gif" alt="gifConstruction" >
+    <Construction/>
+
     <br><br><br><br>
     <p>Cette page comprendra mes loisirs, livres, films..</p>
 
@@ -41,12 +42,5 @@
 </template>
 
 <style scoped>
-img {
-  width: 50%;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-  box-sizing: border-box;
-}
+
 </style>
