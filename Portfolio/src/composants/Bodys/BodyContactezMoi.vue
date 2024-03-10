@@ -176,6 +176,10 @@ fieldset {
 
 <script>
 
+// Grâce à l'adresse proton.mail je vais envoyer un mail à lejaj, j'ai l'alias.
+// les mails seront donc envoyés entre mes deux adresses mails. Un utilisateur ne devra pouvoir qu'envoyer un seul
+// mail par jour. (adresse ip ?)
+
 
 //import nodemailer from "nodemailer";
 //

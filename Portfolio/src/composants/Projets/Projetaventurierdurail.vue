@@ -13,7 +13,7 @@
     <h2>Création d'une interface graphique en JavaFX</h2>
     <br><br><br>
     <h3>Le fonctionnement du jeu</h3>
-    <div>
+    <div class="conteneur-left-right">
     <p class="left">
       Cette première phase m’a appris à m'intégrer dans une structure de code complexe.
       Comprendre les classes ainsi que leur cadre d'action respectives m'a pris un certain temps, mais m'a permis de comprendre l'importance d'un <b> code lisible</b> et <b>commenté</b>.
