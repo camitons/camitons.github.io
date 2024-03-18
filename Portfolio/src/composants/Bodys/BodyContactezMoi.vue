@@ -136,6 +136,7 @@ fieldset {
 }
 </style>
 <template>
+  <Construction />
   <!-- idées pour le backend -->
 
 <!--  Service de stockage en ligne : Vous pouvez utiliser des services de stockage en ligne comme Firebase Realtime Database ou Firestore. Ces services vous permettent de stocker des données sous forme de JSON et fournissent une API simple pour lire et écrire des données. Avec Firebase, par exemple, vous pouvez utiliser Firestore pour stocker les données et Firebase SDK pour JavaScript pour les récupérer côté frontend.-->
@@ -146,31 +147,31 @@ fieldset {
 
 <!--  Utilisation de services de microservices sans serveur (serverless) : Des services comme AWS Lambda ou Google Cloud Functions vous permettent d'exécuter du code sans avoir à gérer des serveurs. Vous pouvez créer une fonction simple pour gérer la récupération des données du formulaire.-->
 
-  <div class="background">
-    <div class="container">
-      <form id="contact" action="" method="post">
-        <h3>Un mot doux, une info ? N'hésitez pas </h3>
-        <fieldset>
-          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-          <input placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <!--     <fieldset>
-              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-            </fieldset> -->
-        <!--     <fieldset>
-              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-            </fieldset> -->
-        <fieldset>
-          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-      </form>
-    </div>
-  </div>
+<!--  <div class="background">-->
+<!--    <div class="container">-->
+<!--      <form id="contact" action="" method="post">-->
+<!--        <h3>Un mot doux, une info ? N'hésitez pas </h3>-->
+<!--        <fieldset>-->
+<!--          <input placeholder="Your name" type="text" tabindex="1" required autofocus>-->
+<!--        </fieldset>-->
+<!--        <fieldset>-->
+<!--          <input placeholder="Your Email Address" type="email" tabindex="2" required>-->
+<!--        </fieldset>-->
+<!--        &lt;!&ndash;     <fieldset>-->
+<!--              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>-->
+<!--            </fieldset> &ndash;&gt;-->
+<!--        &lt;!&ndash;     <fieldset>-->
+<!--              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>-->
+<!--            </fieldset> &ndash;&gt;-->
+<!--        <fieldset>-->
+<!--          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>-->
+<!--        </fieldset>-->
+<!--        <fieldset>-->
+<!--          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>-->
+<!--        </fieldset>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
 </template>
 
 
@@ -208,4 +209,10 @@ fieldset {
 //}
 //
 //module.exports = { sendEmail };
+import {defineComponent} from "vue";
+import Construction from "@/composants/Sous-vues/Construction.vue";
+
+export default defineComponent({
+  components: {Construction}
+})
 </script>
