@@ -1,0 +1,1 @@
+import{o as e,c as t,a,C as s,F as o,b as r}from"./index-5Pgp1yP8.js";const n=r("h1",null," Mastermind ",-1),u={__name:"Projetmastermind",setup(c){return(_,m)=>(e(),t(o,null,[n,a(s)],64))}};export{u as default};
