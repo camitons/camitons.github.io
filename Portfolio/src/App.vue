@@ -7,6 +7,7 @@ import BodyQuiJeSuis from "./composants/Bodys/BodyQuiJeSuis.vue";
 import BodyOueskonVa from "./composants/Bodys/BodyOueskonVa.vue";
 import BodyContactezMoi from "./composants/Bodys/BodyContactezMoi.vue";
 import Footer from "@/composants/Footer.vue";
+import BodyIUT from "@/composants/Bodys/BodyIUT.vue";
 
 
 export default {
@@ -34,6 +35,9 @@ export default {
           break;
         case 'BodyOueskonVa':
           this.currentView = BodyOueskonVa;
+          break;
+        case 'BodyIUT':
+          this.currentView = BodyIUT;
           break;
         case 'BodyContactezMoi':
           this.currentView = BodyContactezMoi;

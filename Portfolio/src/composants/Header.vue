@@ -15,8 +15,11 @@ export default {
       <a @click="changerVue('BodyHome')"><span>Accueil</span></a>
     </button>
     <button>
-      <a @click="changerVue('BodyCompetences')"><span>Projets/Compétences</span></a>
+      <a @click="changerVue('BodyIUT')"><span>Portfolio d’apprentissage</span></a>
     </button>
+    <!--    <button>-->
+<!--      <a @click="changerVue('BodyCompetences')"><span>Projets/Compétences</span></a>-->
+<!--    </button>-->
     <button>
       <a @click="changerVue('BodyQuiJeSuis')"><span>Qui je suis</span></a>
     </button>

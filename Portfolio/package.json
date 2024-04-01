@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "jquery": "^3.7.1",
+    "mongodb": "^6.5.0",
     "nodemailer": "^6.9.11",
     "vue": "^3.3.10",
     "vue-impress": "^0.0.7",
