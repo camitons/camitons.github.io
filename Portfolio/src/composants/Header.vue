@@ -26,8 +26,14 @@ export default {
     <button>
       <a @click="changerVue('BodyOueskonVa')"><span>Oueskon va</span></a>
     </button>
+<!--    <button>-->
+<!--      <a @click="changerVue('BodyContactezMoi')"><span>Contactez-moi</span></a>-->
+<!--    </button>-->
+<!--    <button>-->
+<!--      <a @click="changerVue('BodyMangas')"><span>Baka</span></a>-->
+<!--    </button>-->
     <button>
-      <a @click="changerVue('BodyContactezMoi')"><span>Contactez-moi</span></a>
+      <a @click="changerVue('BodyBook')"><span>Baka</span></a>
     </button>
   </nav>
 

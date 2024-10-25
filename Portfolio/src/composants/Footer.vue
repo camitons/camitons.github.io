@@ -17,10 +17,10 @@
       <p> GITHUB</p>
       <img alt='Logo Github' src="/img/logos/githublogo.png" id='github'>
     </a>
-    <a href="">
-      <p> DISCORD</p>
-      <img alt='Logo discord' src="/img/logos/discordlogo.webp" id='discord'>
-    </a>
+<!--    <a href="">-->
+<!--      <p> DISCORD</p>-->
+<!--      <img alt='Logo discord' src="/img/logos/discordlogo.webp" id='discord'>-->
+<!--    </a>-->
   </div>
 
 </template>

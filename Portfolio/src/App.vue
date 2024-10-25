@@ -1,13 +1,14 @@
 <script>
 import Header from './composants/Header.vue';
 import BodyHome from "./composants/Bodys/BodyHome.vue";
-import BodyDessin from "./composants/Bodys/BodyCompetences.vue";
 import BodyCompetences from "./composants/Bodys/BodyCompetences.vue";
 import BodyQuiJeSuis from "./composants/Bodys/BodyQuiJeSuis.vue";
 import BodyOueskonVa from "./composants/Bodys/BodyOueskonVa.vue";
 import BodyContactezMoi from "./composants/Bodys/BodyContactezMoi.vue";
 import Footer from "@/composants/Footer.vue";
 import BodyIUT from "@/composants/Bodys/BodyIUT.vue";
+import BodyMangas from "@/composants/Bodys/BodyMangas.vue";
+import BodyBook from "@/composants/Bodys/BodyBook.vue";
 
 
 export default {
@@ -44,6 +45,9 @@ export default {
           break;
         case 'BodyCompetences':
           this.currentView = BodyCompetences;
+          break;
+        case 'BodyBook' :
+          this.currentView = BodyBook
           break;
         default:
           this.currentView = BodyHome;

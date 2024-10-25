@@ -1,0 +1,30 @@
+Impossible de scrap depuis sushiscan...
+
+
+
+code mongodb = IBOLkZB8cqdbLOzy
+MongodbCompass (app pour visualiser)
+
+https://chatgpt.com/share/671a5cb6-27a8-8013-a7e6-a7052b656a0e
+
+commandes :
+
+cd PortFolio/src/ApiLivre
+node server.js
+
+dans un autre terminal :
+
+cd Portfolio
+npm run dev
+
+
+tri des livres selon
+- que je l'ai lu ou non
+- genre (plusieurs genres = plusieurs apparitions)?
+- auteur
+- titre
+
+
+le problème actuellement c'est que mon bodybook et mon booksearch font la meme chose : l'affichage
+le truc c'est que l'un trie et l'autre permet de chercher avec le nom...
+
