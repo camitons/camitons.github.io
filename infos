@@ -1,7 +1,3 @@
-Impossible de scrap depuis sushiscan...
-
-
-
 code mongodb = IBOLkZB8cqdbLOzy
 MongodbCompass (app pour visualiser)
 
@@ -25,6 +21,8 @@ tri des livres selon
 - titre
 
 
-le problème actuellement c'est que mon bodybook et mon booksearch font la meme chose : l'affichage
-le truc c'est que l'un trie et l'autre permet de chercher avec le nom...
+il faut que ça marche pas uniquement en localhost
+
+pour rajouter lu par moi il faut que je puisse m'authentifier, rajouter ça risque d'être un peu chiant
+
 
