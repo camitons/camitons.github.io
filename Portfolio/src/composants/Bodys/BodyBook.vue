@@ -1,4 +1,10 @@
 <template>
+  <input
+      type="text"
+      v-model="searchTerm"
+      @input="searchBooks"
+      placeholder="Un livre en tête ?"
+  />
   <div class="book-list">
     <!-- Boutons de tri -->
     <div class="sort-buttons">
@@ -47,9 +53,12 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
+      searchTerm : '',
       books: [], // Liste des livres
       newBook: {
         Nom: "",
@@ -103,6 +112,18 @@ export default {
         }
       } catch (err) {
         console.error("Erreur lors de l'ajout du livre :", err);
+      }
+    },
+    async searchBooks(){
+      if (this.searchTerm.length === 0){
+        await this.fetchBooks();
+      }
+      try {
+        const response = await axios.get(`http://localhost:5000/api/books?nameBook=${this.searchTerm}`);
+
+        this.books= response.data;
+      }catch(error){
+        console.error("Erreur dans la vue pour la recherche de livre : ", error);
       }
     },
     // Trier les livres par la clé donnée (titre, auteur, catégorie)
