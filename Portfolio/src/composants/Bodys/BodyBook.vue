@@ -50,12 +50,16 @@
     </form>
 
 
+  <ManaClicker/>
+
 </template>
 
 <script>
 import axios from "axios";
+import ManaClicker from "@/composants/Sous-vues/ManaClicker.vue";
 
 export default {
+  components: {ManaClicker},
   data() {
     return {
       searchTerm : '',
