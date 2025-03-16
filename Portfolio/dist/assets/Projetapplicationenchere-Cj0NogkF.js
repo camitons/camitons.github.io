@@ -1,0 +1,1 @@
+import{o as a,c as t,a as o,b as r,C as n,F as s}from"./index-B9Qv7jYB.js";const i={__name:"Projetapplicationenchere",setup(c){return(l,e)=>(a(),t(s,null,[e[0]||(e[0]=o("h1",null," Projet application Enchere",-1)),r(n)],64))}};export{i as default};
