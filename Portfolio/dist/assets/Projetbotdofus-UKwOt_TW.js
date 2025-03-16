@@ -1,0 +1,1 @@
+import{o,c as t,a,b as s,C as r,F as n}from"./index-fAfUbKKG.js";const d={__name:"Projetbotdofus",setup(u){return(l,e)=>(o(),t(n,null,[e[0]||(e[0]=a("h1",null,"Automatisation de récolte dans le jeu vidéo Dofus",-1)),s(r)],64))}};export{d as default};
