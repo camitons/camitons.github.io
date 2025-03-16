@@ -8,7 +8,7 @@ import BodyContactezMoi from "./composants/Bodys/BodyContactezMoi.vue";
 import Footer from "@/composants/Footer.vue";
 import BodyIUT from "@/composants/Bodys/BodyIUT.vue";
 import BodyMangas from "@/composants/Bodys/BodyMangas.vue";
-import BodyBook from "@/composants/Bodys/BodyBook.vue";
+import BodyBook from "@/composants/Bodys/BodyBaka.vue";
 
 
 export default {

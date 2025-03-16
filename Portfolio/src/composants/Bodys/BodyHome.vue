@@ -11,13 +11,35 @@
   </div>
   <br><br><br><br><br><br><br><br>
 
-  <div>
-    <h2 id='texteAfficherTimeline' class="CTA" @click="afficherTimeline()"> Une petite histoire vous ferait envie ? <br> Découvrez mes avancées et découvertes de l'informatique</h2>
-    <br><br>
-    <VueTimeline v-if="afficherVueTimeline" />
-    <br>
-    <p @click="afficherTimeline()" v-if="afficherVueTimeline" id="refermerTimeline" class="CTA"> Refermer la timeline </p>
+  <div class="timeline-section">
+    <!-- Ajout d'une icône animée et modification du texte incitatif -->
+    <div class="timeline-cta" @click="afficherTimeline()">
+      <h2 class="CTA">
+        <span class="cta-content">
+          📖 Découvrez mon parcours informatique
+          <!-- Modification du SVG -->
+<svg class="animated-arrow" viewBox="0 0 24 24" width="40" height="40">
+  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+</svg>
+        </span>
+      </h2>
+      <div class="hint-text">(Cliquez pour explorer)</div>
+    </div>
+
+    <!-- Animation de transition pour l'apparition -->
+    <transition name="timeline-fade">
+      <VueTimeline v-if="afficherVueTimeline"/>
+    </transition>
+
+    <!-- Bouton sticky pour fermer -->
+    <div
+        v-if="afficherVueTimeline"
+        class="sticky-close"
+        @click="afficherTimeline()">
+      🔻 Fermer la chronologie
+    </div>
   </div>
+
   <br>
   <div class="music-player" @click="toggleMusique()">
     <audio
@@ -32,10 +54,11 @@
 </template>
 
 <script>
-import VueTimeline from  '../Sous-vues/Timeline.vue';
+import VueTimeline from '../Sous-vues/Timeline.vue';
+
 export default {
 
-  components:{
+  components: {
     VueTimeline
   },
   data() {
@@ -67,6 +90,91 @@ div {
   width: 100%;
   height: 100%;
   background-size: cover;
+}
+
+.timeline-cta {
+  position: relative;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+  max-width: 600px;
+  border: 2px solid goldenrod;
+}
+
+.timeline-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.animated-arrow {
+  vertical-align: middle;
+  margin-left: 15px;
+  animation: float 2s ease-in-out infinite;
+  fill: currentColor;
+}
+
+.hint-text {
+  font-size: 0.8em;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sticky-close {
+  position: sticky;
+  bottom: 20px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 25px;
+  width: fit-content;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #fff;
+}
+
+
+.sticky-close:hover {
+  background: rgba(255, 0, 0, 0.6);
+  transform: scale(1.1);
+}
+
+/* Animation de flottement */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Transition d'apparition */
+.timeline-fade-enter-active,
+.timeline-fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.timeline-fade-enter-from,
+.timeline-fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+  .timeline-cta {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .CTA {
+    font-size: 1.5em;
+  }
 }
 
 #background {
@@ -108,14 +216,15 @@ h1 {
 }
 
 
-
 .timeline {
   display: none;
 }
+
 #texteAfficherTimeline {
   cursor: pointer;
   user-select: none;
 }
+
 #refermerTimeline {
   cursor: pointer;
   user-select: none;
@@ -124,11 +233,12 @@ h1 {
 #LogoMusique {
   position: fixed;
   bottom: 0;
-  right:10px;
+  right: 10px;
   margin: 10px;
   width: 50px;
   height: 50px;
 }
+
 #LogoMusique:hover {
   cursor: pointer;
 }
@@ -179,7 +289,7 @@ h1 {
 /*
 Animation du background et texte qui change au survol
  */
-.CTA:hover{
+.CTA:hover {
   color: #ffa260;
   transition: 0.25s;
   cursor: pointer;

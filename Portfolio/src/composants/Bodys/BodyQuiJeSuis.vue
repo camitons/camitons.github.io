@@ -5,10 +5,12 @@ import Construction from "@/composants/Sous-vues/Construction.vue";
 <template>
   <div>
 
+    <H1>Cette page comprendra mes loisirs, livres, films..</H1>
+    <br><br><br><br>
+    <h1>Je suis actuellement....</h1>
     <Construction/>
 
     <br><br><br><br>
-    <p>Cette page comprendra mes loisirs, livres, films..</p>
 
 
 <!--    <h1>Qui je suis</h1>-->

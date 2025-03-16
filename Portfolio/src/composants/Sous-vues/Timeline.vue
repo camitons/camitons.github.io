@@ -102,6 +102,123 @@
               </div>
             </a>
           </div>
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-icon">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Stage au Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier (LIRMM)</h3>
+                <p class="description">
+                  Stage de 2 mois au sein du LIRMM, laboratoire de recherche en informatique. Participation à un projet pour la création facile d'automates cellulaires pour les novices codé en Javascript.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-icon">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Erasmus à Bruxelles</h3>
+                <p class="description">
+                  Départ pour Bruxelles pour un semestre d'étude. Découverte de nouvelles technologies, de nouveaux camarades, d'un contexte de travail différent.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-icon">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Développement d'une application Electron</h3>
+                <p class="description">
+                  Découverte du framework Electron pour le développement d'applications multiplateformes. Création d'un battleroyal de memes en local avec Electron et React. Utilisation de nombreuses fonctionnalitées Electron.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-icon">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Projet analyse de paquets, utilisation de wireshark </h3>
+                <p class="description">
+                  Projet de groupe d'analyse de paquets wireshark, utilisation des connaissances de protocoles réseaux, découverte de la faille Log4Shell..
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-icon">
+                <i class="fa fa-brain" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Création d'un CNN pour la reconnaissance d'image </h3>
+                <p class="description">
+                  Projet en groupe de 2 de création d'un CNN pour la reconnaissance de panneaux de signalisation, utilisation de Adam (optimiseur), Pytorch, Panda. (Dans un contexte google collab)
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-icon">
+                <i class="fa fa-brain" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Projet de création d'un formulaire interactif pour l'entreprise Shifting Pact (dernier projet Erasmus) </h3>
+                <p class="description">
+                  Création en deux semaines d'un site web présentant une base de données de questions facilement modifiables par l'entreprise, et d'un formulaire interactif pour les utilisateurs. Possibilité pour l'entreprise de récupérer les données des utilisateurs et de les analyser facilement. (.NET, postgresql, Typescript, React)
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2025</span>
+              <div class="timeline-icon">
+                <i class="fa fa-brain" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title"> Fin de l'erasmus, découverte Cassandra (noSQL) </h3>
+                <p class="description">
+                  Fin de l'erasmus, découverte de Cassandra, base de donnée noSQL. Mise en place de vues et de fonctions, découvertes des avantages et inconvénients de ce type de base de donnée.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="timeline">
+            <a href="#" class="timeline-content">
+              <span class="timeline-year">2025</span>
+              <div class="timeline-icon">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              </div>
+              <div class="content">
+                <h3 class="title">Obtention du diplôme</h3>
+                <p class="description">
+                  Validation de mon Bachelor Universitaire de Technologie. Spécialisation en architecture logicielle
+                  et systèmes distribués. Préparation d'un Master en Intelligence Artificielle à l'étranger.
+                </p>
+              </div>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
