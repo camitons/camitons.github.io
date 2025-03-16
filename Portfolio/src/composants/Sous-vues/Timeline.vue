@@ -210,10 +210,9 @@
                 <i class="fa fa-graduation-cap" aria-hidden="true"></i>
               </div>
               <div class="content">
-                <h3 class="title">Obtention du diplôme</h3>
+                <h3 class="title">Découverte du logiciel Fence </h3>
                 <p class="description">
-                  Validation de mon Bachelor Universitaire de Technologie. Spécialisation en architecture logicielle
-                  et systèmes distribués. Préparation d'un Master en Intelligence Artificielle à l'étranger.
+                  Découverte de Fence, logiciel de gestion de la sécurité informatique pour les entreprises lors d'une étude de cas. Création d'un bilan de sécurité pour une entreprise fictive (objectifs de sécurité, menaces, vulnérabilités, plan d'action).
                 </p>
               </div>
             </a>
