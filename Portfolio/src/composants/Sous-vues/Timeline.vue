@@ -215,6 +215,7 @@
                   Découverte de Fence, logiciel de gestion de la sécurité informatique pour les entreprises lors d'une étude de cas. Création d'un bilan de sécurité pour une entreprise fictive (objectifs de sécurité, menaces, vulnérabilités, plan d'action).
                 </p>
               </div>
+
             </a>
           </div>
 
